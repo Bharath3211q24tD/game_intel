@@ -1,0 +1,948 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>GAMEINTEL // Flagship GTA VI Evidence Archive &amp; Research Dossiers</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts: Newsreader, Plus Jakarta Sans, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed-variant": "#005236",
+            "on-background": "#e0e2ec",
+            "background": "#10131a",
+            "on-primary-container": "#4c1a00",
+            "primary": "#ffb694",
+            "on-tertiary-fixed": "#002113",
+            "error": "#ffb4ab",
+            "surface-bright": "#363941",
+            "surface-container-lowest": "#0b0e15",
+            "outline": "#a68b7f",
+            "on-primary-fixed": "#351000",
+            "surface-tint": "#ffb694",
+            "tertiary": "#4edea3",
+            "error-container": "#93000a",
+            "on-error": "#690005",
+            "inverse-surface": "#e0e2ec",
+            "on-secondary-container": "#00374d",
+            "on-secondary-fixed-variant": "#004c69",
+            "on-primary": "#571f00",
+            "surface": "#10131a",
+            "secondary-fixed-dim": "#7bd0ff",
+            "tertiary-container": "#00a572",
+            "on-tertiary": "#003824",
+            "on-secondary-fixed": "#001e2c",
+            "on-surface": "#e0e2ec",
+            "surface-container-low": "#191c23",
+            "secondary": "#7bd0ff",
+            "secondary-fixed": "#c4e7ff",
+            "surface-container-highest": "#32353c",
+            "inverse-on-surface": "#2d3038",
+            "primary-fixed": "#ffdbcc",
+            "on-secondary": "#00354a",
+            "on-primary-fixed-variant": "#7b2f00",
+            "surface-container": "#1d2027",
+            "surface-container-high": "#272a31",
+            "primary-fixed-dim": "#ffb694",
+            "secondary-container": "#00a6e0",
+            "surface-variant": "#32353c",
+            "tertiary-fixed": "#6ffbbe",
+            "on-error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#4edea3",
+            "inverse-primary": "#a14000",
+            "outline-variant": "#584238",
+            "on-tertiary-container": "#00311f",
+            "primary-container": "#e86c28",
+            "on-surface-variant": "#dfc0b3",
+            "surface-dim": "#10131a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "display-hero": [
+              "Newsreader"
+            ],
+            "label-caps": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Newsreader"
+            ],
+            "display-hero-mobile": [
+              "Newsreader"
+            ],
+            "headline-md": [
+              "Newsreader"
+            ],
+            "label-code": [
+              "JetBrains Mono"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "body-lg": [
+              "Newsreader"
+            ],
+            "headline-lg-mobile": [
+              "Newsreader"
+            ],
+            "headline-sm": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "display-hero": [
+              "3.5rem",
+              {
+                "lineHeight": "1.15",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "400"
+              }
+            ],
+            "label-caps": [
+              "0.6875rem",
+              {
+                "lineHeight": "1.2",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg": [
+              "2.25rem",
+              {
+                "lineHeight": "1.25",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "400"
+              }
+            ],
+            "display-hero-mobile": [
+              "2.25rem",
+              {
+                "lineHeight": "1.2",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-md": [
+              "1.5rem",
+              {
+                "lineHeight": "1.35",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "500"
+              }
+            ],
+            "label-code": [
+              "0.75rem",
+              {
+                "lineHeight": "1.4",
+                "letterSpacing": "0.04em",
+                "fontWeight": "500"
+              }
+            ],
+            "body-md": [
+              "0.9375rem",
+              {
+                "lineHeight": "1.6",
+                "letterSpacing": "0",
+                "fontWeight": "400"
+              }
+            ],
+            "body-sm": [
+              "0.8125rem",
+              {
+                "lineHeight": "1.5",
+                "letterSpacing": "0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "1.1875rem",
+              {
+                "lineHeight": "1.65",
+                "letterSpacing": "0",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg-mobile": [
+              "1.75rem",
+              {
+                "lineHeight": "1.3",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-sm": [
+              "1.125rem",
+              {
+                "lineHeight": "1.4",
+                "letterSpacing": "-0.005em",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Custom marquee animation */
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-ticker {
+      display: flex;
+      width: max-content;
+      animation: tickerScroll 45s linear infinite;
+    }
+    .animate-ticker:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary-container selection:text-white">
+<!-- TOP UTILITY MASTHEAD (40px) -->
+<aside class="w-full bg-surface border-b border-outline-variant/30 text-on-surface-variant font-label-code text-label-code">
+<div class="max-w-7xl mx-auto px-margin flex items-center justify-between h-10 text-xs">
+<!-- Left: Investigation Mode Toggle -->
+<div class="flex items-center gap-space-md">
+<span class="text-on-surface-variant uppercase tracking-wider text-[10px]">Active Corpus:</span>
+<div class="inline-flex items-center bg-surface-container-lowest border border-outline-variant/40 rounded p-0.5">
+<button class="px-2 py-0.5 rounded bg-primary-container text-white font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            GTA VI [PRIMARY]
+          </button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1">
+            GTA V [REF ARCHIVE]
+          </button>
+</div>
+</div>
+<!-- Center: Operational Status Index -->
+<div class="hidden lg:flex items-center gap-4 text-[11px]">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>INDEXED CLAIMS: <strong class="text-on-surface">141</strong></span>
+</span>
+<span class="text-outline-variant/50">•</span>
+<span>PEER REVIEW: <span class="text-secondary">ACTIVE</span></span>
+<span class="text-outline-variant/50">•</span>
+<span>INTELLIGENCE CYCLE: <span class="text-on-surface font-mono">Q2-2025</span></span>
+</div>
+<!-- Right: Audit Mode & Shortcut -->
+<div class="flex items-center gap-space-md">
+<span class="hidden sm:inline-block text-on-surface-variant/70">REF: SEC-TTWO-10K</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 text-[11px] uppercase tracking-wider" href="#standards">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Forensic Audit Desk
+        </a>
+</div>
+</div>
+</aside>
+<!-- SHARED COMPONENT: TopNavBar (Strictly implemented per JSON Blueprint) -->
+<header class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-b border-outline-variant/30 sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+<div class="w-full max-w-7xl mx-auto px-margin flex items-center justify-between h-[72px]">
+<!-- Left: Brand Identity -->
+<div class="flex items-center gap-space-lg">
+<a class="group flex flex-col justify-center" href="#">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-primary-container rounded-sm transform rotate-45"></span>
+<span class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-surface dark:text-on-surface">GAMEINTEL</span>
+</div>
+<span class="text-[9px] font-label-code tracking-widest text-primary uppercase mt-0.5 pl-4 font-semibold">Evidence Archive // Est. 2024</span>
+</a>
+<!-- Desktop Navigation Links from JSON -->
+<nav class="hidden md:flex items-center gap-6 ml-6">
+<a class="border-b-2 border-primary text-primary pb-1 font-label-caps text-label-caps uppercase" href="#">Dispatches</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors duration-150" href="#">Intelligence Hub</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors duration-150" href="#">Database</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors duration-150" href="#">Claim Tracker</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors duration-150" href="#">Methodology &amp; Standards</a>
+</nav>
+</div>
+<!-- Right: Action Bar & Search per JSON -->
+<div class="flex items-center gap-space-md">
+<!-- Quick Search Bar (search_bar: "on_right") -->
+<div class="relative hidden sm:flex items-center">
+<div class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</div>
+<input class="bg-surface border border-outline-variant/50 focus:border-primary-container focus:ring-1 focus:ring-primary-container text-on-surface placeholder:text-on-surface-variant/60 text-xs font-body-sm pl-8 pr-12 py-1.5 rounded w-64 lg:w-72 transition-all" placeholder="Search verified dossier, patent, trailer cue..." type="text">
+<div class="absolute inset-y-0 right-0 pr-2 flex items-center pointer-events-none">
+<kbd class="bg-surface-container border border-outline-variant/40 text-on-surface-variant font-label-code text-[10px] px-1.5 py-0.5 rounded font-mono">⌘K</kbd>
+</div>
+</div>
+<!-- Trailing Icon Actions from JSON -->
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1.5 rounded hover:bg-surface-container-high transition-colors duration-150" title="Filter Records">
+<span class="material-symbols-outlined text-[20px]">filter_alt</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container-high transition-colors duration-150" title="Tune Parameters">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Trailing Primary Action from JSON: "GTA VI / V Archive" -->
+<button class="hidden lg:inline-flex items-center gap-2 bg-surface-container-high hover:bg-surface-bright text-on-surface border border-outline-variant/40 px-3.5 py-1.5 rounded font-label-caps text-label-caps uppercase transition-colors duration-150">
+<span class="material-symbols-outlined text-[16px] text-primary">folder_open</span>
+<span>GTA VI / V Archive</span>
+</button>
+</div>
+</div>
+</header>
+<!-- FORENSIC INTELLIGENCE LIVE TICKER -->
+<section aria-label="Forensic Claim Ticker" class="border-b border-outline-variant/20 bg-surface-container-low overflow-hidden py-2">
+<div class="max-w-7xl mx-auto px-margin flex items-center">
+<div class="flex items-center gap-2 pr-4 border-r border-outline-variant/30 flex-shrink-0 z-10 bg-surface-container-low">
+<span class="flex h-2 w-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider font-bold">FORENSIC DISPATCH WIRE</span>
+</div>
+<div class="overflow-hidden relative w-full ml-4">
+<div class="animate-ticker flex items-center gap-8 whitespace-nowrap text-xs font-label-code">
+<!-- Item 1 -->
+<div class="inline-flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-tertiary-container/30 text-tertiary border border-tertiary/40 font-bold tracking-wider">CONFIRMED</span>
+<span class="text-on-surface">Vice City &amp; State of Leonida verified in Rockstar Trailer 1</span>
+<span class="text-outline-variant/60 font-mono">[REF-01]</span>
+</div>
+<span class="text-outline-variant/30">|</span>
+<!-- Item 2 -->
+<div class="inline-flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-secondary-container/30 text-secondary border border-secondary/40 font-bold tracking-wider">REPORTED</span>
+<span class="text-on-surface">Fall 2025 release window reaffirmed in Take-Two Q3 2025 earnings call</span>
+<span class="text-outline-variant/60 font-mono">[TTWO-SEC]</span>
+</div>
+<span class="text-outline-variant/30">|</span>
+<!-- Item 3 -->
+<div class="inline-flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-error-container/30 text-error border border-error/40 font-bold tracking-wider">DISPUTED</span>
+<span class="text-on-surface">70% completed build leak debunked by cryptographic hash audit</span>
+<span class="text-outline-variant/60 font-mono">[REV-09]</span>
+</div>
+<span class="text-outline-variant/30">|</span>
+<!-- Item 4 -->
+<div class="inline-flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary-container/30 text-primary border border-primary/40 font-bold tracking-wider">SPECULATION</span>
+<span class="text-on-surface">Playable area estimated at 2.4x Los Santos via land survey photogrammetry</span>
+<span class="text-outline-variant/60 font-mono">[GEO-MAP]</span>
+</div>
+<span class="text-outline-variant/30">|</span>
+<!-- Duplicated for seamless loop -->
+<div class="inline-flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-tertiary-container/30 text-tertiary border border-tertiary/40 font-bold tracking-wider">CONFIRMED</span>
+<span class="text-on-surface">Vice City &amp; State of Leonida verified in Rockstar Trailer 1</span>
+<span class="text-outline-variant/60 font-mono">[REF-01]</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MAIN EDITORIAL CANVAS -->
+<main class="max-w-7xl mx-auto px-margin py-space-xl space-y-12">
+<!-- HERO INVESTIGATION: 8-col Lead / 4-col Dossier Radar -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Lead Investigative Dossier (8 Columns) -->
+<article class="lg:col-span-8 bg-surface-container border border-outline-variant/30 rounded flex flex-col justify-between overflow-hidden relative group">
+<!-- Top Editorial Meta Bar -->
+<div class="p-space-lg pb-0">
+<div class="flex flex-wrap items-center justify-between gap-3 border-b border-outline-variant/20 pb-3">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-primary-container/20 text-primary border border-primary/30 rounded font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                DEEP INVESTIGATION // 14 CITATIONS
+              </span>
+<span class="inline-flex items-center px-2 py-0.5 bg-tertiary-container/20 text-tertiary border border-tertiary/30 rounded font-label-caps text-label-caps uppercase tracking-wider">
+                CONFIRMED &amp; REPORTED HYBRID
+              </span>
+</div>
+<div class="font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+<span>Updated 3h ago</span>
+<span class="text-outline-variant">•</span>
+<span>12 min forensic read</span>
+</div>
+</div>
+</div>
+<!-- Headline & Excerpt -->
+<div class="p-space-lg pt-4 space-y-3">
+<h1 class="font-headline-lg text-headline-lg md:font-display-hero md:text-[3rem] md:leading-[1.1] text-on-surface font-normal">
+            Mapping Leonida: Triangulating Highway 1, Vice City Keys, and Port Gellhorn from Official Footage
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+            Cross-referencing 2022 raw disclosures against Take-Two Interactive trademark registries, FAA airspace filings, and Trailer 1 photogrammetric coordinates to rigorously delineate confirmed biomes from community speculation.
+          </p>
+</div>
+<!-- Imagery with High-End Forensic Dossier Overlay -->
+<div class="relative mx-space-lg mb-space-md border border-outline-variant/30 rounded overflow-hidden aspect-[16/9]">
+<img class="w-full h-full object-cover brightness-90 contrast-110" data-alt="A cinematic wide-angle forensic cartography map of a fictional tropical metropolitan coastline resembling Vice City and the Florida Keys at dusk. Highly detailed satellite-style terrain grids, vector telemetry lines, elevation contour marks, and photographic coordinates intersect the coastline under moody obsidian slate and amber twilight lighting. Investigative aesthetic with sharp, high-contrast dark tones, subtle luminous vector overlays, and clinical editorial precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsNv-qWEu-kMMiPlbNicboRpiW1PXkxlwBOGGh0qmSPp5BzTqT4xTCGI3hiMfUVi0V0ShcWP0dDEqc_YI9J05A8IPiuaz4oSl37Zehl-VtUNjTWioD-epia3SlWQoTQf8yc_btri5PVDDMK1PLfqzVPjZfzrULTqOuUH6jXSawpE_t-F4LVv-w0aJ0CcyMdHqoytkZ-t7-hkd4ArreCAee6AQg5izxst1GS3mhuqXY14A7OJqDZEQuEg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<!-- Image Inset Evidence Tag -->
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/40 px-3 py-1.5 rounded flex items-center gap-3">
+<span class="font-label-code text-[11px] text-tertiary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              COORDINATE OVERLAY VERIFIED
+            </span>
+<span class="text-on-surface-variant/40 font-mono text-xs">|</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">25°46'31"N 80°11'32"W</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[10px] font-mono text-secondary border border-outline-variant/30">CUE: TR1-00:42</span>
+</div>
+</div>
+<!-- Footnote & Action Matrix -->
+<div class="p-space-lg pt-2 bg-surface-container-low/70 border-t border-outline-variant/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-xs font-label-code text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Corroboration: 4 SEC Filings, 3 Rockstar Press Releases, 7 Geo-Analyses</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-4 py-2 bg-primary-container hover:bg-[#f97316] text-white font-body-sm text-body-sm font-semibold rounded flex items-center gap-2 transition-colors" href="#">
+<span>Read Intelligence Dossier</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<button class="px-3 py-2 bg-surface hover:bg-surface-container-high border border-outline-variant/40 text-on-surface font-body-sm text-body-sm rounded flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-outline">data_table</span>
+<span>Evidence Matrix</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Right Column: Top Radar Dossiers (4 Columns) -->
+<aside class="lg:col-span-4 flex flex-col gap-4">
+<!-- Header Strip -->
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">radar</span>
+            VERIFICATION RADAR
+          </span>
+<span class="font-label-code text-[11px] text-on-surface-variant">LIVE QUEUE (3)</span>
+</div>
+<!-- Radar Card 1 -->
+<article class="bg-surface-container p-space-md border border-outline-variant/30 rounded hover:border-outline transition-colors flex flex-col justify-between gap-3">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase tracking-wider">NARRATIVE // CAST</span>
+<span class="px-2 py-0.5 rounded text-[10px] bg-secondary-container/20 text-secondary border border-secondary/30 font-label-code font-bold uppercase">
+                REPORTED
+              </span>
+</div>
+<h2 class="font-headline-md text-headline-sm text-on-surface hover:text-primary transition-colors cursor-pointer">
+              The Dual Protagonist Dynamic: Lucia &amp; Jason's Narrative Arc vs 'Bonnie &amp; Clyde' Trope
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Cross-analyzing actor SAG-AFTRA strike disclosures with dialogue leak taxonomy to substantiate co-op branching mechanics.
+            </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-code text-on-surface-variant">
+<span class="text-outline">Jason Schreier / Bloomberg</span>
+<span class="text-primary hover:underline cursor-pointer flex items-center gap-0.5">Audit [REF-12] <span class="material-symbols-outlined text-[12px]">open_in_new</span></span>
+</div>
+</article>
+<!-- Radar Card 2 -->
+<article class="bg-surface-container p-space-md border border-outline-variant/30 rounded hover:border-outline transition-colors flex flex-col justify-between gap-3">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase tracking-wider">ENGINE &amp; PHYSICS</span>
+<span class="px-2 py-0.5 rounded text-[10px] bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-label-code font-bold uppercase">
+                CONFIRMED
+              </span>
+</div>
+<h2 class="font-headline-md text-headline-sm text-on-surface hover:text-primary transition-colors cursor-pointer">
+              Water Dynamics &amp; Wave Physics: Take-Two Patent US11288863B2 Deconstructed
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              USPTO records confirm oceanic buoyancy simulation, real-time foam generation, and littoral vehicle resistance matrices.
+            </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-code text-on-surface-variant">
+<span class="text-outline">USPTO Patent Office</span>
+<span class="text-primary hover:underline cursor-pointer flex items-center gap-0.5">Audit [PAT-03] <span class="material-symbols-outlined text-[12px]">open_in_new</span></span>
+</div>
+</article>
+<!-- Radar Card 3 -->
+<article class="bg-surface-container p-space-md border border-outline-variant/30 rounded hover:border-outline transition-colors flex flex-col justify-between gap-3">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase tracking-wider">PRODUCTION SCOPE</span>
+<span class="px-2 py-0.5 rounded text-[10px] bg-secondary-container/20 text-secondary border border-secondary/30 font-label-code font-bold uppercase">
+                REPORTED
+              </span>
+</div>
+<h2 class="font-headline-md text-headline-sm text-on-surface hover:text-primary transition-colors cursor-pointer">
+              Project Americas Scope Reductions: What Was Re-scoped Between 2019 and 2024
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Investigating the consolidation from South American landmasses into a denser, hyper-detailed Leonida archipelago.
+            </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-code text-on-surface-variant">
+<span class="text-outline">Internal Development Audit</span>
+<span class="text-primary hover:underline cursor-pointer flex items-center gap-0.5">Audit [DEV-08] <span class="material-symbols-outlined text-[12px]">open_in_new</span></span>
+</div>
+</article>
+</aside>
+</section>
+<!-- CLAIM VERIFICATION INDEX / INTERACTIVE TRIAGE BAR -->
+<section class="bg-surface-container border border-outline-variant/30 rounded p-space-lg space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Claim Verification Index</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Systematic evidentiary rating across 141 tracked assertions. Updated synchronously with every corporate disclosure.
+          </p>
+</div>
+<!-- Filter Status Chips -->
+<div class="flex flex-wrap items-center gap-2 font-label-code text-xs">
+<button class="px-2.5 py-1 bg-surface-container-high border border-outline-variant/40 rounded text-on-surface font-semibold hover:border-primary transition-colors flex items-center gap-1.5">
+<span>All Claims</span>
+<span class="bg-surface px-1.5 py-0.2 rounded text-[10px] text-outline">141</span>
+</button>
+<button class="px-2.5 py-1 bg-tertiary-container/10 border border-tertiary/30 rounded text-tertiary hover:bg-tertiary-container/20 transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Confirmed</span>
+<span class="font-bold">48</span>
+</button>
+<button class="px-2.5 py-1 bg-secondary-container/10 border border-secondary/30 rounded text-secondary hover:bg-secondary-container/20 transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Reported</span>
+<span class="font-bold">34</span>
+</button>
+<button class="px-2.5 py-1 bg-primary-container/10 border border-primary/30 rounded text-primary hover:bg-primary-container/20 transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Speculation</span>
+<span class="font-bold">29</span>
+</button>
+<button class="px-2.5 py-1 bg-error-container/10 border border-error/30 rounded text-error hover:bg-error-container/20 transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Disputed</span>
+<span class="font-bold">18</span>
+</button>
+<button class="px-2.5 py-1 bg-surface-container-highest border border-outline-variant/30 rounded text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Unknown</span>
+<span class="font-bold">12</span>
+</button>
+</div>
+</div>
+<!-- Quick Category Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-xs font-label-caps uppercase">
+<span class="text-on-surface-variant font-label-code text-[11px] mr-2">Taxonomy:</span>
+<button class="px-3 py-1 bg-primary text-on-primary font-bold rounded">World &amp; Map</button>
+<button class="px-3 py-1 bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface rounded border border-outline-variant/30 transition-colors">Story &amp; Protagonists</button>
+<button class="px-3 py-1 bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface rounded border border-outline-variant/30 transition-colors">Vehicles &amp; Arsenal</button>
+<button class="px-3 py-1 bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface rounded border border-outline-variant/30 transition-colors">Game Mechanics</button>
+<button class="px-3 py-1 bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface rounded border border-outline-variant/30 transition-colors">Technical Engine (RAGE 9)</button>
+</div>
+<!-- Compact Evidence Table Snapshot -->
+<div class="overflow-x-auto border border-outline-variant/20 rounded">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-lowest text-on-surface-variant font-label-code text-[11px] border-b border-outline-variant/30">
+<tr>
+<th class="py-2.5 px-4 font-semibold uppercase">Claim ID</th>
+<th class="py-2.5 px-4 font-semibold uppercase">Subject &amp; Empirical Claim</th>
+<th class="py-2.5 px-4 font-semibold uppercase">Corpus</th>
+<th class="py-2.5 px-4 font-semibold uppercase">Status Rating</th>
+<th class="py-2.5 px-4 font-semibold uppercase">Primary Corroborating Source</th>
+<th class="py-2.5 px-4 font-semibold uppercase text-right">Audit</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 font-label-code text-xs">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 font-mono text-outline">CLM-084</td>
+<td class="py-3 px-4 font-body-sm text-on-surface font-medium">State of Leonida includes Vice City, Kelly County, and Port Gellhorn districts</td>
+<td class="py-3 px-4 text-primary font-semibold">GTA VI</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> CONFIRMED
+                </span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant">Rockstar Games Official Press Release (Dec 2023)</td>
+<td class="py-3 px-4 text-right">
+<a class="text-primary hover:underline font-mono text-xs" href="#">View [EVD-01]</a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 font-mono text-outline">CLM-085</td>
+<td class="py-3 px-4 font-body-sm text-on-surface font-medium">Lucia character confirmed as first female protagonist in 3D/HD continuity</td>
+<td class="py-3 px-4 text-primary font-semibold">GTA VI</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> CONFIRMED
+                </span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant">Trailer 1 Frame 00:08 Dialog Sequence ("Trust?")</td>
+<td class="py-3 px-4 text-right">
+<a class="text-primary hover:underline font-mono text-xs" href="#">View [EVD-02]</a>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 font-mono text-outline">CLM-086</td>
+<td class="py-3 px-4 font-body-sm text-on-surface font-medium">Total playable area equals 128 sq km with fully navigable interior buildings (&gt;40%)</td>
+<td class="py-3 px-4 text-primary font-semibold">GTA VI</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] bg-primary-container/20 text-primary border border-primary/30 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> SPECULATION
+                </span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant">GTA Mapping Community Trigonometric Triangulation</td>
+<td class="py-3 px-4 text-right">
+<a class="text-primary hover:underline font-mono text-xs" href="#">View [EVD-03]</a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-4 font-mono text-outline">CLM-087</td>
+<td class="py-3 px-4 font-body-sm text-on-surface font-medium">Third playable character featured as undercover DEA or Leonida State Trooper</td>
+<td class="py-3 px-4 text-primary font-semibold">GTA VI</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] bg-error-container/20 text-error border border-error/30 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> DISPUTED
+                </span>
+</td>
+<td class="py-3 px-4 text-on-surface-variant">Debunked audio snippet; matches GTA V canned DLC files</td>
+<td class="py-3 px-4 text-right">
+<a class="text-primary hover:underline font-mono text-xs" href="#">View [EVD-04]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- BENTO GRID: FEATURED GTA VI RESEARCH HUB & FIELD DISPATCHES -->
+<section class="space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider font-bold">DISPATCH DOSSIERS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Forensic Case Studies &amp; Deep Dives</h2>
+</div>
+<a class="font-label-code text-xs text-primary hover:underline flex items-center gap-1" href="#">
+<span>View all 38 field dispatches</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Bento Card A: Lucia Ankle Monitor -->
+<article class="bg-surface-container border border-outline-variant/30 rounded flex flex-col justify-between overflow-hidden group hover:border-outline transition-colors">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A gritty high-contrast investigative macro view of a sleek GPS ankle monitoring device secured to a character's ankle in a dimly lit, atmospheric motel room. Cinematic moody shadows, textured denim fabric, polished matte black electronic casing with a faint blinking LED indicator. Investigative crime editorial styling with dark slate gradients, precision lighting, and authentic forensic depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKRKj0KqvctG8V2-2lhTaRkn2dFgTyFbM4ttn82UA1cL3xqJGXW3xEfPpRdvpOGlGDMMPd2QWVmV_zltYnCgti-gw4Pjzn9Qf-YN2p3z7ZHZsRA7uBnsy1LSJ2kjDNIk96y_zQg30mOdTv8rT9b2xFpmk-3wXALNxhIHEKQWrNh4X8omIHZOm1KdONa8XpbjWlIJLTdNso_uOdTMPJLDWPGfsu6FBxmbd8sBSggJys9ofbvSGIJW8xkA">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded text-[10px] bg-primary-container/20 text-primary border border-primary/30 font-label-code font-bold uppercase tracking-wider backdrop-blur-md">
+                SPECULATION
+              </span>
+</div>
+<div class="absolute bottom-2 right-3 font-label-code text-[10px] text-on-surface-variant/80 bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+              REF: ART-01
+            </div>
+</div>
+<div class="p-space-lg space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-code text-[10px] text-outline uppercase tracking-wider">MECHANICS // OPEN-WORLD GATING</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-1">
+                Lucia's Ankle Monitor: Parole Constraints &amp; Open-World Progression Theory
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Examining Trailer 1's correctional facility framing and official artwork to analyze whether electronic monitoring acts as an in-lore physical island barrier.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-code">
+<span class="text-on-surface-variant">By Dr. M. Vance</span>
+<a class="text-primary hover:underline flex items-center gap-1" href="#">
+<span>Dossier</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Bento Card B: Vice City Transit & Rail -->
+<article class="bg-surface-container border border-outline-variant/30 rounded flex flex-col justify-between overflow-hidden group hover:border-outline transition-colors">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A nocturnal forensic architectural capture of an elevated light rail transit train gliding between neon-accented palm-lined skyscraper canyons in a sprawling coastal metropolis. Atmospheric mist, wet asphalt reflections, amber streetlamps, and cinematic deep navy blue tones. Highly detailed investigative aesthetic, geometric railway cross-beams, and sharp cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMkAZhwgXTiMQRdDJ-FigBWgvv40_OO1Iz-E_TZdlTlTytnf6b6QZSJ7X3ZexMzeE-7xF7NSHx34cG_LADQyPnlhYHZ1lwC6-TG_x10shpo_t19RqG5YOxMwI7Qqe9tdhE-8CLAMKQxlLek2DnSGt7MhGy0FmtGkWvAtoKFfRdv8ePhBdy_wqk8EsNW8nZesQGpqFX7fWBHeFV5ZU76f722NqdbmUoX6q4pmUXY4DSn0V5FmUUqLAPwQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded text-[10px] bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-label-code font-bold uppercase tracking-wider backdrop-blur-md">
+                CONFIRMED
+              </span>
+</div>
+<div class="absolute bottom-2 right-3 font-label-code text-[10px] text-on-surface-variant/80 bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+              REF: INFRA-04
+            </div>
+</div>
+<div class="p-space-lg space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-code text-[10px] text-outline uppercase tracking-wider">INFRASTRUCTURE // TRANSIT</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-1">
+                Vice City Transit &amp; Rail: Every Train Model Verified in Trailer 1
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Forensic classification of the automated people-mover system operating across the Vice City downtown corridor compared to Miami Metromover schematics.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-code">
+<span class="text-on-surface-variant">By K. Thorne, Tech Desk</span>
+<a class="text-primary hover:underline flex items-center gap-1" href="#">
+<span>Dossier</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Bento Card C: AI Pedestrian Routine Simulation -->
+<article class="bg-surface-container border border-outline-variant/30 rounded flex flex-col justify-between overflow-hidden group hover:border-outline transition-colors">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A technical wireframe and patent schematic visualization representing artificial intelligence pedestrian behavior simulation in a dense city environment. Digital nodes, pathfinding vectors, and density heatmaps overlaying an urban street scene at twilight with deep slate, cool cyan, and amber data markers. High-tech analytical intelligence aesthetic with surgical detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_wfx-Op2MkjzRU05cTTUG3DZckSvnpcm0IIImrqGPOGDALuf8UfOm--PD2maj8ZUw4vS13RXWBAg1JTAOftwy6vLzR4qXyHyHrd126duZfnADe-0v1e-Q9s1eKCZZ0oUcpk1twTbNWs0GGHMgVeBW9iv2Cl9UG9F90SIiDNhpWEEZXZYT1sdsqvwrv5BYpbpARJlBQVE8lHF1VnSwJ-W9G1Vr-9EQzVsE4L_UeS3g-XH6Z9ukHtwVTw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded text-[10px] bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-label-code font-bold uppercase tracking-wider backdrop-blur-md">
+                CONFIRMED
+              </span>
+</div>
+<div class="absolute bottom-2 right-3 font-label-code text-[10px] text-on-surface-variant/80 bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+              REF: PAT-09
+            </div>
+</div>
+<div class="p-space-lg space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-code text-[10px] text-outline uppercase tracking-wider">AI &amp; WORLD SIMULATION</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-1">
+                AI Pedestrian Routine Simulation: Deep Dive into Patent US10981067B2
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                How Rockstar's patented automated virtual navigation schedules create authentic social rituals, beach gatherings, and organic police response patterns.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label-code">
+<span class="text-on-surface-variant">By S. Al-Rashid</span>
+<a class="text-primary hover:underline flex items-center gap-1" href="#">
+<span>Dossier</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- INTERACTIVE DATABASE FAST-LOOKUP MATRIX -->
+<section class="bg-surface-container border border-outline-variant/30 rounded p-space-lg space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-outline-variant/20 pb-4">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider font-bold">EVIDENCE VAULT</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Interactive Database Fast-Lookup</h2>
+</div>
+<span class="font-label-code text-xs text-on-surface-variant">312 Cross-Referenced Entities</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Database Module 1: Characters -->
+<div class="bg-surface p-space-md border border-outline-variant/30 rounded space-y-3 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+              CHARACTERS
+            </span>
+<span class="font-label-code text-[11px] text-outline">18 Profiles</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Lucia [Verified]</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Jason [Verified]</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Stefanie (Parole)</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">'Florida Joker' Parody</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Mud Club Host</span>
+</div>
+</div>
+<!-- Database Module 2: Locations -->
+<div class="bg-surface p-space-md border border-outline-variant/30 rounded space-y-3 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+              LOCATIONS
+            </span>
+<span class="font-label-code text-[11px] text-outline">44 Sectors</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Vice City Beach</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Port Gellhorn</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Ambrosia</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Kelly County</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Hamlet Keys</span>
+</div>
+</div>
+<!-- Database Module 3: Vehicles -->
+<div class="bg-surface p-space-md border border-outline-variant/30 rounded space-y-3 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">directions_car</span>
+              VEHICLES &amp; ARSENAL
+            </span>
+<span class="font-label-code text-[11px] text-outline">76 Indexed</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Cheetah Classic</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Oceanic (1950s)</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Airboat Hover</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Pegassi Torero</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Patriot Mil-Spec</span>
+</div>
+</div>
+<!-- Database Module 4: Technical Specs -->
+<div class="bg-surface p-space-md border border-outline-variant/30 rounded space-y-3 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-primary-fixed-variant font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+              TECHNICAL SPECS
+            </span>
+<span class="font-label-code text-[11px] text-outline">29 Metrics</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">RAGE 9 Engine</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Procedural Ragdoll</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Dynamic Strand Hair</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Volumetric Fog</span>
+<span class="px-2 py-1 bg-surface-container-high rounded text-xs text-on-surface hover:text-primary cursor-pointer border border-outline-variant/30">Audio Ray-Tracing</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GTA V COMPARATIVE BASELINE ARCHIVE -->
+<section class="bg-surface-container-low border border-outline-variant/30 rounded p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="space-y-3 max-w-2xl z-10">
+<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-surface border border-outline-variant/40 text-on-surface-variant font-label-code text-xs">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>HISTORICAL BENCHMARK // 2013-2024 EVIDENCE CORPUS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          How Los Santos Sets the Evidentiary Baseline for Leonida's Density
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          GameIntel maintains an unbroken repository of Grand Theft Auto V's 10-year live economy, memory bounds, and physics engine iterations. Use our dual-corpus comparator to contrast verified GTA VI specifications against GTA V's empirical metrics.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 z-10 w-full lg:w-auto">
+<button class="w-full sm:w-auto px-4 py-2.5 bg-surface hover:bg-surface-container-high border border-outline-variant/50 text-on-surface font-label-caps text-label-caps uppercase rounded transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Explore GTA V Reference Archive</span>
+</button>
+<button class="w-full sm:w-auto px-4 py-2.5 bg-primary-container hover:bg-[#f97316] text-white font-label-caps text-label-caps uppercase rounded transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+<span>Launch Comparative Diff</span>
+</button>
+</div>
+</section>
+<!-- METHODOLOGY & EVIDENCE ASSURANCE BOX -->
+<section class="bg-surface-container-lowest border-2 border-primary-container/40 rounded p-space-lg relative overflow-hidden" id="standards">
+<div class="flex flex-col md:flex-row items-start gap-space-lg">
+<div class="p-3 bg-primary-container/20 text-primary rounded border border-primary/30 flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">policy</span>
+</div>
+<div class="space-y-3 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">INTELLIGENCE CHARTER</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-code text-xs text-on-surface-variant">CODE OF VERIFICATION ET-2024</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+            Zero Unattributed Rumors. Total Cryptographic &amp; Documented Corroboration.
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+            Every single claim, location, mechanic, and technical detail logged on GameIntel is corroborated by a minimum of two independent sources, SEC regulatory disclosures, verified Take-Two patent registries, or cryptographically authenticated media archives. Speculative models are strictly compartmentalized and mathematically bound.
+          </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-white font-label-code text-xs font-semibold uppercase tracking-wider group transition-colors" href="#">
+<span>Read our 7-tier verification rubric &amp; methodology protocol</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SHARED COMPONENT: Footer (Strictly implemented per JSON Blueprint) -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/30 mt-space-xl">
+<div class="w-full max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row justify-between items-start gap-gutter">
+<!-- Brand & Disclaimers -->
+<div class="max-w-md space-y-3">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-primary-container rounded-sm transform rotate-45"></span>
+<span class="text-headline-sm font-headline-sm font-semibold text-on-surface">GAMEINTEL</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          © 2025 GAMEINTEL Intelligence Archive. Rigorous evidence-backed verification and cross-referenced forensic documentation. All trademarks belong to Take-Two Interactive and Rockstar Games.
+        </p>
+<div class="font-label-code text-label-code text-outline flex items-center gap-3 pt-1">
+<span>SHA-256 VERIFIED LEDGER</span>
+<span>•</span>
+<span>NODE CLUSTER: AP-EAST</span>
+</div>
+</div>
+<!-- Links Column 1: Standards & Method -->
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider font-bold block mb-3">METHODOLOGY</span>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">Standards of Verification</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">Methodology Overview</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">Source Audit Guidelines</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">Correction Policy</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Research Portals -->
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider font-bold block mb-3">REGISTRY</span>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">Evidence Registry</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">Research Portal</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">SEC TTWO Docket Feed</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface font-body-sm transition-colors duration-150" href="#">USPTO Patent Index</a></li>
+</ul>
+</div>
+<!-- Administrative & Security -->
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider font-bold block mb-3">INTELLIGENCE TERMINAL</span>
+<div class="bg-surface p-3 rounded border border-outline-variant/30 space-y-2 font-label-code text-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>TERMINAL ACCESS:</span>
+<span class="text-tertiary">ENCRYPTED</span>
+</div>
+<button class="w-full py-1.5 px-3 bg-surface-container-high hover:bg-surface-bright text-on-surface border border-outline-variant/40 rounded transition-colors text-left flex items-center justify-between">
+<span>Staff Portal Login</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

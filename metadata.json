@@ -1,0 +1,6 @@
+{
+  "name": "GAMEINTEL // Flagship GTA VI Evidence Archive",
+  "description": "Rigorous evidence-backed verification archive, forensic documentation, and comparative benchmarks for Grand Theft Auto VI and GTA V.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

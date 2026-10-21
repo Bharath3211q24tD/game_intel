@@ -1,0 +1,249 @@
+---
+name: GameIntel Dossier
+colors:
+  surface: '#10131a'
+  surface-dim: '#10131a'
+  surface-bright: '#363941'
+  surface-container-lowest: '#0b0e15'
+  surface-container-low: '#191c23'
+  surface-container: '#1d2027'
+  surface-container-high: '#272a31'
+  surface-container-highest: '#32353c'
+  on-surface: '#e0e2ec'
+  on-surface-variant: '#dfc0b3'
+  inverse-surface: '#e0e2ec'
+  inverse-on-surface: '#2d3038'
+  outline: '#a68b7f'
+  outline-variant: '#584238'
+  surface-tint: '#ffb694'
+  primary: '#ffb694'
+  on-primary: '#571f00'
+  primary-container: '#e86c28'
+  on-primary-container: '#4c1a00'
+  inverse-primary: '#a14000'
+  secondary: '#7bd0ff'
+  on-secondary: '#00354a'
+  secondary-container: '#00a6e0'
+  on-secondary-container: '#00374d'
+  tertiary: '#4edea3'
+  on-tertiary: '#003824'
+  tertiary-container: '#00a572'
+  on-tertiary-container: '#00311f'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffdbcc'
+  primary-fixed-dim: '#ffb694'
+  on-primary-fixed: '#351000'
+  on-primary-fixed-variant: '#7b2f00'
+  secondary-fixed: '#c4e7ff'
+  secondary-fixed-dim: '#7bd0ff'
+  on-secondary-fixed: '#001e2c'
+  on-secondary-fixed-variant: '#004c69'
+  tertiary-fixed: '#6ffbbe'
+  tertiary-fixed-dim: '#4edea3'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005236'
+  background: '#10131a'
+  on-background: '#e0e2ec'
+  surface-variant: '#32353c'
+typography:
+  display-hero:
+    fontFamily: Newsreader
+    fontSize: 3.5rem
+    fontWeight: '400'
+    lineHeight: '1.15'
+    letterSpacing: -0.02em
+  display-hero-mobile:
+    fontFamily: Newsreader
+    fontSize: 2.25rem
+    fontWeight: '400'
+    lineHeight: '1.2'
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Newsreader
+    fontSize: 2.25rem
+    fontWeight: '400'
+    lineHeight: '1.25'
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Newsreader
+    fontSize: 1.75rem
+    fontWeight: '400'
+    lineHeight: '1.3'
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Newsreader
+    fontSize: 1.5rem
+    fontWeight: '500'
+    lineHeight: '1.35'
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 1.125rem
+    fontWeight: '600'
+    lineHeight: '1.4'
+    letterSpacing: -0.005em
+  body-lg:
+    fontFamily: Newsreader
+    fontSize: 1.1875rem
+    fontWeight: '400'
+    lineHeight: '1.65'
+    letterSpacing: '0'
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 0.9375rem
+    fontWeight: '400'
+    lineHeight: '1.6'
+    letterSpacing: '0'
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 0.8125rem
+    fontWeight: '400'
+    lineHeight: '1.5'
+    letterSpacing: 0.01em
+  label-code:
+    fontFamily: JetBrains Mono
+    fontSize: 0.75rem
+    fontWeight: '500'
+    lineHeight: '1.4'
+    letterSpacing: 0.04em
+  label-caps:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 0.6875rem
+    fontWeight: '700'
+    lineHeight: '1.2'
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 2rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system embodies a **Premium Dark Editorial** aesthetic. It moves deliberately away from the neon-soaked, hyper-saturated clichés of standard video game wikis and streaming platforms, establishing instead the rigorous gravitas of an investigative journalistic publication or intelligence archive. The platform delivers meticulously tracked, evidence-backed coverage for Grand Theft Auto VI, with comparative benchmarks from Grand Theft Auto V.
+
+The visual atmosphere is cinematic, intellectual, and uncompromisingly authoritative. It borrows atmospheric discipline from investigative financial publications, luxury broadsheets, and forensic intelligence dossiers:
+- **Atmospheric Depth:** Heavy, obsidian slate backdrops that recede gracefully, giving prominent stage presence to photographic imagery, satellite-style asset leaks, patent filings, and tabular analysis.
+- **Micro-Precision UI:** Clean typographic hierarchy, 1px structural hairline divisions, monospace metadata stamps, and subtle directional indicators that evoke forensic cross-referencing.
+- **Subdued Restraint:** Vibrant color is banished from decorative flourishes and strictly isolated to operational functions: verification status ratings, primary actions, and vital updates.
+
+## Colors
+
+The color palette is built around deep, desaturated charcoal tones, punctuated by functional journalistic status codes and an authoritative amber-orange brand accent.
+
+### Surface Hierarchy
+- **Canvas / Root Background:** `#0B0D11`
+- **Surface Level 1 (Masthead, Rail, Table Headers):** `#11141B`
+- **Surface Level 2 (Dossier Cards, Panels, Modals):** `#181D27`
+- **Surface Level 3 (Nested Evidence Blocks, Inputs, Table Cells):** `#1F2633`
+- **Surface Elevate (Popovers, Tooltips, Action Drawers):** `#262E3D`
+- **Hairline Borders:** `#2D3545` or `rgba(255, 255, 255, 0.08)`
+
+### Text & Editorial Content
+- **Primary Text (Headlines, Body, Critical Values):** `#F3F4F6` (High contrast, slightly warm off-white)
+- **Secondary Text (Deck copy, metadata labels, bylines):** `#94A3B8`
+- **Tertiary / Dimmed (Timestamps, footnote disclaimers, separators):** `#64748B`
+
+### Brand Accents
+- **Primary Editorial Brand Accent:** `#E56A26` (Muted heat amber; used for primary CTA, active navigation tabs, breaking alert indicators)
+- **Primary Brand Hover/Active:** `#F97316`
+
+### Claim Verification Hierarchy (Strict Taxonomy)
+Colors in this taxonomy must never be applied decoratively; they signify verified editorial verdicts:
+- **Confirmed (Verified via primary source or official disclosure):** Accent `#10B981`, Tint BG `rgba(16, 185, 129, 0.12)`, Border `rgba(16, 185, 129, 0.30)`
+- **Reported (Credible trade media / Tier-1 industry journalist):** Accent `#38BDF8`, Tint BG `rgba(56, 189, 248, 0.12)`, Border `rgba(56, 189, 248, 0.30)`
+- **Speculation (Community datamine, patent filing, analyst thesis):** Accent `#F59E0B`, Tint BG `rgba(245, 158, 11, 0.12)`, Border `rgba(245, 158, 11, 0.30)`
+- **Disputed (Contradicted by physical/empirical evidence or debunked):** Accent `#F43F5E`, Tint BG `rgba(244, 63, 94, 0.12)`, Border `rgba(244, 63, 94, 0.30)`
+- **Unknown (Awaiting primary documentation / Pending audit):** Accent `#94A3B8`, Tint BG `rgba(148, 163, 184, 0.12)`, Border `rgba(148, 163, 184, 0.30)`
+
+## Typography
+
+The typographic hierarchy intentionally contrasts high-brow literary journalism with forensic, data-rich precision:
+
+- **Editorial Headings (`Newsreader`):** Used for report headlines, dossier titles, feature leads, and investigative article copy. Its sharp editorial serif conveys classical publishing authority, drawing inspiration from investigative long-reads.
+- **Interface & UI Text (`Plus Jakarta Sans`):** Selected for high legibility across dense data tables, matrices, claim trackers, button labels, and secondary supporting narrative.
+- **Evidence & Verification Metadata (`JetBrains Mono`):** Applied to document timestamps, build IDs, patent registry references, citation numbers, and status badges to anchor the platform’s forensic authenticity.
+
+### Styling Directives
+- Editorial leads (`body-lg`) should utilize `Newsreader` in longform investigative contexts, while analytical cards and evidence breakdowns default to `body-md` in `Plus Jakarta Sans`.
+- All uppercase labels (`label-caps`) must use tracked letter spacing (`0.08em`) to guarantee crisp readability over dark surfaces.
+
+## Layout & Spacing
+
+The layout is constructed on an authoritative, newspaper-inspired 12-column responsive grid engineered for dense information density without visual chaos.
+
+### Grid & Breakpoints
+- **Desktop (1280px and above):** 12 columns, 1.5rem (`24px`) gutters, maximum content width capped at `1440px` centered with variable margins (minimum `2rem`).
+- **Tablet (768px – 1279px):** 8 columns, 1rem (`16px`) gutters, `1.5rem` outer margins.
+- **Mobile (Below 768px):** 4 columns, 1rem (`16px`) gutters, `1rem` outer canvas padding.
+
+### Structural Scaffolding
+- **Top Utility Masthead (Fixed 40px):** Houses the global ticker (live confirmed/refuted claim updates), game switcher (GTA VI vs. GTA V cross-reference toggle), and timestamp indices.
+- **Primary Journalistic Header (72px):** Logo identity, primary taxonomy navigation, search shortcut trigger (`⌘K`), and discreet staff intelligence portal entry.
+- **Content Paneling:** Investigative features span 8 columns, while the evidence matrix and claim timeline occupy a synchronized 4-column contextual sidebar.
+
+## Elevation & Depth
+
+To protect the clean, academic seriousness of the publication, drop shadows are strictly restrained. Depth is communicated through structural layering, dark tonal shifts, and luminous razor hairlines rather than diffused fuzzy elevations.
+
+### Surface Elevation Hierarchy
+- **Base Level 0 (`#0B0D11`):** The ground viewport canvas.
+- **Tier 1 Surfaces (`#11141B`):** Mastheads, primary sidebars, and structural headers; distinguished solely by a 1px border of `rgba(255, 255, 255, 0.08)` along their separating edges.
+- **Tier 2 Surfaces (`#181D27`):** Report cards, claim blocks, and editorial modules. No default box shadow; elevation is established by contrast against Tier 0/1 backdrops and continuous hairline borders (`#2D3545`).
+- **Tier 3 Surfaces (`#1F2633`):** Active interactive segments, code blocks, quote embeds, and nested evidence matrices.
+
+### Overlays & Modals
+- **Command Search & Evidence Lightboxes (`#181D27`):** Elevated using an opaque backdrop overlay of `rgba(11, 13, 17, 0.85)` treated with a sharp `12px` backdrop blur. The modal frame carries an ultra-crisp hairline highlight (`rgba(255, 255, 255, 0.12)`) and an ultra-deep ambient rim shadow: `0 24px 48px -12px rgba(0, 0, 0, 0.7)`.
+
+## Shapes
+
+The design system maintains a **Soft** shape language (`roundedness: 1`), keeping radii subtle and disciplined. Crisp geometries emphasize editorial prestige and data precision.
+
+- **Base Radius (`0.25rem` / `4px`):** Used on status badges, citation tags, inputs, and tab segments. Avoids toy-like softness and maintains alignment with dense monospace metadata.
+- **Large Radius (`0.5rem` / `8px`):** Applied to primary cards, research modules, callouts, and evidence containers.
+- **Extra-Large Radius (`0.75rem` / `12px`):** Reserved exclusively for root dialog windows, command search modals, and major feature cards.
+- **Pill Shapes:** Strictly forbidden for standard UI containers; permitted only for status indicator dots (`w-2 h-2 rounded-full`).
+
+## Components
+
+### 1. Buttons
+- **Primary Editorial Button:** Solid brand accent (`#E56A26`) with `#FFFFFF` text, `font-weight: 600`, `font-size: 0.875rem`, `border-radius: 4px`. Hover state: `#F97316` with zero translation; transition strictly background-color `150ms ease`.
+- **Secondary / Evidence Action:** Background `#1F2633`, text `#F3F4F6`, border `1px solid rgba(255, 255, 255, 0.1)`. Hover state: background `#262E3D`, border `rgba(255, 255, 255, 0.2)`.
+- **Ghost / Meta Link Button:** Background transparent, text `#94A3B8`, underlined on hover with `#E56A26`.
+
+### 2. Status Badges & Claim Chips
+- **Structure:** Inline-flex, `padding: 2px 8px`, `border-radius: 4px`, `font-family: JetBrains Mono`, `font-size: 0.6875rem`, uppercase, letter-spacing `0.05em`.
+- **Rendering:** Every badge displays a 6px solid circular status dot alongside the claim state (`CONFIRMED`, `REPORTED`, `SPECULATION`, `DISPUTED`, `UNKNOWN`), pairing tinted backgrounds with precise matching border strokes as specified in Section 2.
+
+### 3. Source Citation Chips
+- Small inline tags (`#1F2633`) featuring a mono index prefix (e.g., `[REF-04]`), `#94A3B8` text, and a micro external link icon. On hover, reveals a rich contextual popover detailing the verified primary source (patent link, audio transcript, or corporate SEC filing).
+
+### 4. Evidence Matrix Table
+- Alternating dark slate rows (`#11141B` and `#141822`) with `1px` bottom borders in `rgba(255, 255, 255, 0.05)`.
+- Fixed monospace data points for dates, source credibility indices, and game version flags (`GTA VI vs GTA V`).
+- Hovering a row highlights it with a subtle left border accent in `#E56A26`.
+
+### 5. Input Fields & Search Trigger
+- Background `#11141B`, border `1px solid #2D3545`, text `#F3F4F6`, placeholder `#64748B`, `border-radius: 4px`.
+- Focus ring: No glowing halo; single sharp border color change to `#E56A26` and an inner border `rgba(229, 106, 38, 0.2)`.
+- Global quick search bar contains an integrated right-aligned shortcut badge: `⌘K` in `#1F2633` with `JetBrains Mono`.
+
+### 6. Editorial Cards
+- Dossier summaries and story teasers feature high-contrast hero photography with a dark gradient ramp (`from-transparent to-[#181D27]`).
+- Includes a dedicated header strip holding the publication timestamp, category slug (e.g., `PHYSICS ENGINE`, `MAP BOUNDARIES`), and claim status badge before the serif headline.
